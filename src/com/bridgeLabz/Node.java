@@ -2,11 +2,13 @@ package com.bridgeLabz;
 
 public class Node <T> {
 
+	private T Key;
+
 	private T data;
 	private Node<T> next;
-	public Node(T data) {//get data
-		this.data = data;//assign data
-		this.next = null;// next, by-default// null
+	public Node(T data) {
+		this.data = data;
+		this.next = null;
 	}
 
 	public T getData() {
@@ -23,6 +25,14 @@ public class Node <T> {
 
 	public void setNext(Node<T> next) {
 		this.next = next;
+	}
+
+	public T getKey() {
+		return Key;
+	}
+
+	public void setKey(T key) {
+		Key = key;
 	}
 
 }
